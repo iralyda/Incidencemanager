@@ -25,3 +25,6 @@ Route::get('{id}/destroy','IncidentController@destroy');
 /*Route::post('Incidents','IncidentController');
 Route::resource('incidents', 'PostController');
 Route::get('Incidents','IncidentController');*/
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
